@@ -1,0 +1,15 @@
+:root{
+    --base-color:#ff5c7f;
+    --btn-prim:#8cc716;
+    --secondary-color:#FFA459;
+    --shawdow-color:#6F6F72;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
