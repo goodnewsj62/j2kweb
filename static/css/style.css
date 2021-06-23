@@ -743,3 +743,125 @@ header nav li a:hover{
     padding: 2rem;
 }
 
+
+.contacts p{
+    display: inline-block;
+    margin:0.5rem 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.contacts p .fas{
+    color: var(--base-color);
+    font-size: 2rem;
+}
+
+.accounts{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+.accounts a{
+    text-decoration: none;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--base-color);
+}
+
+.accounts a *{
+    font-size: 1.5rem;
+}
+
+.accounts .fa-twitter{
+    color: #1DA1F2;
+}
+.accounts .fa-facebook{
+    color:#4267B2;
+}
+.accounts .fa-instagram{
+    color:#C13584;
+}
+
+.accounts .fa-youtube{
+    color: #ff0000;
+}
+
+.contact nav{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.contact .powered{
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact nav ul{
+    margin-left:auto ;
+    display: flex;
+}
+.contact nav ul li{
+    list-style:none;
+    border-right: 2px solid var(--shawdow-color);
+    text-align: center;
+    padding: 2px 10px;
+}
+
+.contact nav ul li:nth-child(3){
+    border: 0;
+}
+
+.contact nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.contact nav ul li a:hover, .contact nav ul li a:active{
+    color: initial;
+}
+
+
+@media screen and (max-width:900px) {
+    .contact{
+        margin: 1rem;
+    }
+
+    .contacts p{
+        display: inline;
+        margin: 0.5rem 1.5rem;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .contacts p{
+        display: block;
+        margin: 0.5rem 1.5rem;
+    }
+    .accounts{
+        width:100%;
+        margin: 1.5rem 0;
+    }
+
+    .contact nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact nav .powered{
+        text-align: center;
+    }
+    .contact nav ul{
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+    .contact nav ul li{
+        padding: 0 5px;
+        border: 0;
+    }
+}
